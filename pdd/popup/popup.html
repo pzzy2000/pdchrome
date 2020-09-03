@@ -1,0 +1,85 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>极速下单</title>
+    <style>
+    </style>
+    <link rel="stylesheet" type="text/css" href="popup.css" />
+    <script src="/base/jquery-1.12.4.min.js"></script>
+    <script src="popup.js"></script>
+</head>
+<body>
+
+    <div class="content">
+        <div class="title">
+            极速下单
+        </div>
+        <table>
+            <tr>
+                <td class="col50"><a href="#" data-action="createTab" data-url="http://www.jisuxiadan.com">官方网站</a></td>
+            </tr>
+        </table>
+        <div class="title">
+            商家后台
+        </div>
+        <div class="shoplist" style="clear:both">
+            <div class="col33"><a href="#" data-action="createTab" data-url="https://xd.mogujie.com">蘑菇街</a></div>
+            <div class="col33"><a href="#" data-action="createTab" data-url="https://mms.pinduoduo.com/">拼多多</a></div>
+            <div class="col33"><a href="#" data-action="createTab" data-url="https://shop.jd.com">京东</a></div>
+            <div class="col33"><a href="#" data-action="createTab" data-url="https://sop.suning.com/sel/member/accIndex.action">苏宁</a></div>
+            <div class="col33"><a href="#" data-action="createTab" data-url="https://fxg.jinritemai.com/index.html#/iview/order/stockup?tab=3">放心购</a></div>
+            <div class="col33"><a href="#" data-action="createTab" data-url="http://mms.mengtuiapp.com/">萌推</a></div>
+            <div class="col33"><a href="#" data-action="createTab" data-url="https://trade.taobao.com/trade/itemlist/list_sold_items.htm">淘宝</a></div>
+            <div class="col33"><a href="#" data-action="createTab" data-url="https://trade.1688.com/order/seller_order_list.htm?scene_type=&source=">阿里巴巴</a></div>
+
+        </div>
+        <div class="title">
+            采购后台
+        </div>
+        <div class="shoplist" style="clear:both">
+            <div class="col50"><a href="#" data-action="createTab" data-url="https://buyertrade.taobao.com/trade/itemlist/list_bought_items.htm">淘宝采购列表</a></div>
+            <div class="col50"><a href="#" data-action="createTab" data-url="https://trade.1688.com/order/buyer_order_list.htm">阿里采购列表</a></div>
+            <div class="col50"><a href="#" data-action="createTab" data-url="http://mobile.yangkeduo.com/personal.html">拼多多采购列表</a></div>
+            <div></div>
+        </div>
+        <div class="title" style="position:relative">
+            通用设置<div class="fo-tipbox" style="position:absolute;left:60px;top:6px; width: 100px;text-align:center; color: white; background: green; padding: 3px; z-index: 99999999; display: none;">设置修改成功！</div>
+        </div>
+        <table>
+            <tr>
+                <td><label><input type="checkbox" id="AutoSyncAddr" />后台自动同步地址(淘宝阿里)</label></td>
+            </tr>
+            <tr>
+                <td><label><input type="checkbox" id="AutoConfirmItem" />自动点立即购买(淘宝阿里)</label></td>
+            </tr>
+            <tr>
+                <td><label><input type="checkbox" id="AutoConfirmOrder" />自动提交订单(淘宝阿里)</label></td>
+            </tr>
+            <tr>
+                <td><label><input type="checkbox" id="AutoConfirmAddr" />地址编辑窗口自动保存(淘宝)</label></td>
+            </tr>
+            <tr>
+                <td><label><input type="checkbox" id="SaveBuyPrice" />保存采购价到订单备注</label></td>
+            </tr>
+            <tr>
+                <td><label><input type="checkbox" id="KeepPayPage" />采购备注完不要关闭付款页</label></td>
+            </tr>
+            <tr>
+                <td>
+                    <label><input type="checkbox" id="AutoComment" />自动留言(淘宝阿里)</label>
+                    <label><input type="checkbox" id="IsFixedComment" />固定留言</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <textarea id="FixedComment"></textarea>
+                </td>
+            </tr>
+            <tr id="trStaff">
+                <td colspan="2">拍单客服：<input id="Staff" type="text" /></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

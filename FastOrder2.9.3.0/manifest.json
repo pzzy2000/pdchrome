@@ -1,0 +1,36 @@
+﻿{
+  "name": "极速下单",
+  "description": "帮助蘑菇街、拼多多、京东、苏宁、放心购、萌推、有赞、魔筷、快手、淘宝、阿里等商家，快速从阿里巴巴、天猫、淘宝采购下单、同步发货。为效率而生、节省采购发货时间",
+  "version": "2.9.3.0",
+  "manifest_version": 2,
+  "background": {
+    "scripts": [
+      "base/jquery-1.12.4.min.js",
+      "background/background.js"
+    ]
+  },
+  "content_scripts": [],
+  "permissions": [
+    "background",
+    "tabs",
+    "cookies",
+    "webRequest",
+    "webRequestBlocking",
+    "*://*/*",
+    "notifications"
+  ],
+  "browser_action": {
+    "default_popup": "popup/popup.html",
+    "default_title": "极速下单"
+  },
+  "icons": {
+    "19": "image/ico19.png",
+    "48": "image/ico48.png",
+    "128": "image/ico128.png"
+  },
+  "web_accessible_resources": [
+    "image/*",
+    "base/*"
+  ],
+  "update_url": "https://clients2.google.com/service/update2/crx"
+}

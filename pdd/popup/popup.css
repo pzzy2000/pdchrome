@@ -1,0 +1,11 @@
+@CHARSET "UTF-8";
+body { overflow: hidden; margin: 0px; padding: 0px; background-color: #F8F8FF;font-family: Microsoft Yahei; font-size: 13px; }
+.content { width: 230px; margin: 5px 10px; }
+.title { font-weight: bold; border-bottom: 1px solid #ff464e; color: #ff464e; padding: 10px 0 5px 0;clear:both; }
+table { width: 100%; }
+td { padding: 2px; }
+.col33 { width: 33%;float:left;padding:3px 0; }
+.col50 { width: 50%; float: left; padding: 3px 0; }
+a { text-decoration: none; color: #4d4d4d; }
+#save { line-height: 30px; width: 65px; background-color: #ff464e; color: white; display:inline-block; border-radius:5px 5px;}
+#FixedComment { width:100%;}

@@ -1,0 +1,55 @@
+﻿{
+  "name": "拼多多下单",
+  "description": "pdd下单",
+  "version": "2.9.3.0",
+  "manifest_version": 2,
+  "background": {
+    "scripts": [
+      "background/background.js"
+    ]
+  },
+  "content_scripts": [
+        {
+			//"matches": ["http://*/*", "https://*/*"],"http://yangkeduo.com//*"
+			// "<all_urls>" 表示匹配所有地址
+			"matches": ["https://yangkeduo.com/*"],
+			// 多个JS按顺序注入
+			"js": ["js/pddopt.js"],
+			// JS的注入可以随便一点，但是CSS的注意就要千万小心了，因为一不小心就可能影响全局样式
+			//"css": ["css/custom.css"],
+			// 代码注入的时间，可选值： "document_start", "document_end", or "document_idle"，最后一个表示页面空闲时，默认document_idle
+			"run_at": "document_end"
+		}
+		// 这里仅仅是为了演示content-script可以配置多个规则
+		
+		//{
+		//	"matches": ["*://*/*.png", "*://*/*.jpg", "*://*/*.gif", "*://*/*.bmp"],
+		//	"js": ["js/show-image-content-size.js"]
+		//}
+  
+  ],
+  "permissions": [
+    "background",
+    "tabs",
+    "cookies",
+    "webRequest",
+    "webRequestBlocking",
+    "*://*/*",
+    "notifications"
+  ],
+  "browser_action": {
+    //"default_popup": "popup/popup.html",
+    "default_title": "极速下单",
+    "default_icon": "image/ico19.png"
+  },
+  "icons": {
+    "19": "image/ico19.png",
+    "48": "image/ico48.png",
+    "128": "image/ico128.png"
+  },
+  "web_accessible_resources": [
+    "image/*",
+    "base/*"
+  ]
+  //"update_url": "https://clients2.google.com/service/update2/crx"
+}
